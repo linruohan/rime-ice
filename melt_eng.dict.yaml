@@ -7,8 +7,6 @@
 ---
 name: melt_eng
 version: "1"
-sort: by_weight
-
 import_tables:
   - en_dicts/en     # 原装词库
   - en_dicts/en_ext # 自己补充的词库

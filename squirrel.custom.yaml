@@ -10,6 +10,8 @@ patch:
     #     ascii_mode: true  # 开启默认英文
     com.microsoft.VSCode:
         ascii_mode: false   # 关闭默认英文
+    # com.runningwithcrayons.Alfred:
+    #     no_inline: true     # 规避一个可能只有我碰到的 Bug。。。在 Alfred 输入框输入 3 个以上的字母，但是不上屏，直接按 Esc，再次呼出 Alfred 会发现输入框卡死了。
 
 
   # 选择皮肤：
@@ -34,7 +36,7 @@ patch:
       font_face: "PingFangSC"
       font_point: 18
       label_font_point: 13
-      # inline_preedit: false
+      inline_preedit: true
 
     # 以下开始都是官方内置皮肤
     # /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml

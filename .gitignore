@@ -1,12 +1,15 @@
 .DS_Store
+**/.idea/
 .vscode/
 
 build/
 *.userdb/
-
 installation.yaml
 user.yaml
 
-cn_dicts/private.dict.yaml
+Tool/scel2txt/out/*
+Tool/scel2txt/scel/*
+
 *private*
-opencc/.idea
+
+rime_*

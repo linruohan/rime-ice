@@ -7,12 +7,11 @@
 #
 # 希望的效果是：输入艺术家的名字后，第一个候选项永远是中文，第二个候选项永远是日文（方便在 javdb.com 上检索😅）
 # 示例：输入「相泽南」后，会被映射为「相泽南 相沢みなみ」。
-# 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.dict.yaml 中的映射就会起作用了。
+# 对于中日文不同的，需要现在这里添加进词库，这样在 opencc/others.txt 中的映射就会起作用了。
 ---
 name: av
-version: "2022-08-15"
+version: "2022-10-28"
 sort: by_weight
-vocabulary: essay-zh-hans
 ...
 # 简体和日文相同的：
 本田岬	ben tian jia	666
@@ -29,6 +28,7 @@ vocabulary: essay-zh-hans
 伊藤舞雪	yi teng wu xue	666
 有坂深雪	you ban shen xue	666
 友田彩也香	you tian cai ye xiang	666
+有栖七菜	you qi qi cai	666
 佐伯由美香	zuo bo you mei xiang	666
 西田那津	xi tian na jin	666
 # 简体和日文不同的：
@@ -47,7 +47,6 @@ vocabulary: essay-zh-hans
 冲田杏梨	chong tian xing li	666
 春咲凉	chun xiao liang	666
 大桥未久	da qiao wei jiu	666
-蒂亚	di ya	666
 楪可怜	die ke lian	666
 飞鸟里伊奈	fei niao li yi nai	666
 妃悠爱	fei you ai	666
@@ -58,6 +57,7 @@ vocabulary: essay-zh-hans
 古川伊织	gu chuan yi zhi	666
 广濑里绪菜	guang lai li xu cai	666
 河北春菜	he bei chun cai	666
+凰香奈芽	huang xiang nai ya	666
 吉川莲	ji chuan lian	666
 吉泽明步	ji ze ming bu	666
 岬奈奈美	jia nai nai mei	666
@@ -102,6 +102,7 @@ vocabulary: essay-zh-hans
 藤森里穗	teng sen li sui	666
 天海翼	tian hai yi	666
 天使萌	tian shi meng	666
+天音真比奈	tian yin zhen bi nai	666
 望月理沙	wang yue li sha	666
 武藤绫香	wu teng ling xiang	666
 希岛爱理	xi dao ai li	666
