@@ -9,16 +9,16 @@ patch:
 
 
   # 候选词个数
-  menu/page_size: 5
+  menu/page_size: 4
 
 
   # macOS 偏好设置的优先级更高，「偏好设置 - 键盘 - 输入法 - 使用“中/英”键切换“ABC”输入模式」。
-  ascii_composer/good_old_caps_lock: true # true | false , Caps 切换大小写或切换中英
+  ascii_composer/good_old_caps_lock: false # true | false , Caps 切换大小写或切换中英
 
   ascii_composer/switch_key:
     # 打字打到一半时按下了 Caps/Shift 后： commit_code 上屏拼音的英文字母 | commit_text 上屏拼音拼出的词语
     Caps_Lock: commit_text # commit_code | commit_text
-    Shift_L: noop # noop | commit_code | commit_text
+    Shift_L: commit_code # noop | commit_code | commit_text
     Shift_R: noop # macOS 不会单独响应这个，设定上面那个，左右 Shift 都管用
     Control_L: noop
     Control_R: noop
