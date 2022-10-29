@@ -15,5 +15,4 @@ import_tables:
   - cn_dicts/others  # 一些杂项
 
 
-  - cn_dicts/private # *******私人词库（联系人之类的），请删除此行再部署，否则鼠须管会报错，小狼毫会只能输入英文******* #
 ...
