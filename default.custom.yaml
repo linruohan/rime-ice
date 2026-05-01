@@ -1,0 +1,43 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sun Jun 11 11:53:24 2023"
+  rime_version: 1.8.5
+patch:
+  "ascii_composer/good_old_caps_lock": true
+  "ascii_composer/switch_key":
+    Caps_Lock: commit_text
+    Control_L: noop
+    Control_R: noop
+    Eisu_toggle: clear
+    Shift_L: commit_code
+    Shift_R: noop
+  "key_binder/bindings":
+    - {accept: "Control+Shift+4", toggle: traditionalization, when: always}
+    - {accept: "Control+Shift+F", toggle: traditionalization, when: always}
+    - {accept: "Control+Shift+slash", toggle: traditionalization, when: always}
+    - {accept: "Control+Shift+A", toggle: ascii_punct, when: always}
+    - {accept: "Control+a", send: Home, when: composing}
+    - {accept: "Control+e", send: End, when: composing}
+    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
+    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
+    - {accept: Tab, send: "Shift+Right", when: composing}
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: equal, send: Page_Down, when: has_menu}
+  "key_binder/select_last_character": grave
+  "menu/page_size": 4
+  schema_list:
+    - {schema: rime_ice}
+    - {schema: luna_pinyin}
+    - {schema: luna_pinyin_fluency}
+    - {schema: luna_pinyin_simp}
+    - {schema: luna_quanpin}
+    - {schema: double_pinyin_flypy}
+  switcher:
+    abbreviate_options: true
+    caption: "「方案选单」"
+    fold_options: false
+    hotkeys: ["Control+Shift+grave"]
+    option_list_separator: " / "
+    save_options: [full_shape, ascii_punct, traditionalization, emoji]
