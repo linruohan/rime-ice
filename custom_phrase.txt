@@ -62,3 +62,4 @@ gone	gone
 Go程	gocheng
 code	code
 SOHO	soho
+rm -rf /c/Windows/Temp/*;rm -rf ~/AppData/Local/Temp/*;rm -rf /c/Windows/Logs/*;rm -rf /c/Windows/Prefetch/*	clean
