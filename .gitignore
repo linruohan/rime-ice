@@ -6,7 +6,7 @@ build/
 
 sync/
 installation.yaml
-
+rime_ice.userdb/
 others/script/scel2txt/out/*
 others/script/scel2txt/scel/*
 
