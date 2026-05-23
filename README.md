@@ -15,8 +15,8 @@
 
 到 Rime [官网](https://rime.im/) 或 app 商店下载安装 Rime 输入法应用。然后：
 
-1. 下载 [雾凇拼音](https://github.com/iDvel/rime-ice/releases/latest/download/full.zip)；
-2. 解压，复制并覆盖所有文件到输入法的「用户目录」；
+1. 下载 [雾凇拼音](https://github.com/iDvel/rime-ice/releases/latest/download/full.zip) 压缩包；
+2. 先**清空**[^2]输入法 `用户文件夹`/`用户设定` 内的全部文件，再将压缩包内的所有文件复制进去；
 3. 重新部署。
 
 部署完成后就可以打字了。按 <kbd>F4</kbd> 可以切换输入方案或开关各项功能。重做以上三步可以更新/还原雾凇拼音。
@@ -33,7 +33,7 @@ bash rime-install iDvel/rime-ice
 
 雾凇拼音包含：
 
-1. 为简体中文设计的全拼和常见双拼方案，包括雾凇拼音（全拼）、智能 ABC、自然码、小鹤双拼、搜狗双拼、微软双拼、紫光双拼、拼音加加、9 键[^2] 和轻量的英文方案。
+1. 为简体中文设计的全拼和常见双拼方案，包括雾凇拼音（全拼）、智能 ABC、自然码、小鹤双拼、搜狗双拼、微软双拼、紫光双拼、拼音加加、9 键[^3] 和轻量的英文方案。
 2. 长期维护、精心调教且开源的百万中英词库：[了解 >](#长期维护的中英词库)
 3. 完善的基础输入体验，以及丰富的扩展功能：[了解 >](#功能演示和使用教程)
 4. 对 Rime 部分及主流前端每一项配置的详细注释，方便学习和自定义：[示例 >](./default.yaml)
@@ -139,6 +139,10 @@ Thanks to JetBrains for the OSS development license.
 
 [![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://jb.gg/OpenSourceSupport)
 
+Thanks to all contributors.
+
+[![Contributors Avatars](https://contrib.rocks/image?repo=iDvel/rime-ice)](https://github.com/iDvel/rime-ice/graphs/contributors)
+
 ## 常见问题
 
 <details>
@@ -202,7 +206,7 @@ patch:
 <details>
 <summary>🚫 xx 字打不出来 / xx 读音没有</summary>
 
-可能为生僻字，请尝试开启大字表。若确实为常用字（如常见于人名、物品名、术语），请 PR 或在 #666 补充。
+可能为生僻字，请尝试开启大字表。若确实为常用字（如常见于人名、物品名、术语），请 PR 或在 <https://github.com/iDvel/rime-ice/issues/666> 补充。
 
 </details>
 
@@ -295,8 +299,8 @@ preset_color_schemes:
 
 台湾繁体有以下两种方式供参考，先修改为 `s2tw.json`：
 
-- 参考 #291，修改 opencc
-- 参考 #575，补加一个 t2tw
+- 参考 <https://github.com/iDvel/rime-ice/issues/291>，修改 opencc
+- 参考 <https://github.com/iDvel/rime-ice/issues/575>，补加一个 t2tw
     （因为不知道什么原因，`s2tw.json` 选项并没有真正转换为台湾繁体，所以又补了一个 `t2tw.json`）
     （librime 1.10 已修复，新版本不再需要折腾了。）
 
@@ -305,7 +309,7 @@ preset_color_schemes:
 <details>
 <summary>😀 可以支持颜文字吗？</summary>
 
-没有加入颜文字，可参考 #920。
+没有加入颜文字，可参考 <https://github.com/iDvel/rime-ice/pull/920>。
 
 </details>
 
@@ -391,4 +395,5 @@ GPL-3.0 (only) License.
 <img src="./others/asserts/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=300 />
 
 [^1]: 由 @Mintimate 友情构建
-[^2]: 九键方案仅适用于 iOS 平台的特定软件
+[^2]: 这将清空你之前的用户偏好和词库，如需要，请先备份
+[^3]: 九键方案仅适用于 iOS 平台的特定软件
